@@ -1,0 +1,139 @@
+.events-page {
+  padding-top: var(--space-4);
+}
+
+.page-header {
+  margin-bottom: var(--space-5);
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+}
+
+.filters {
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  margin-bottom: var(--space-4);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.search-input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-full) 0 0 var(--radius-full);
+  padding: 12px 16px 12px 48px;
+  color: var(--text-main);
+  transition: all var(--transition);
+}
+
+[data-theme='light'] .search-input {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.search-bar .btn {
+  border-radius: 0 var(--radius-full) var(--radius-full) 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.category-filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  transition: all var(--transition);
+}
+
+.chip:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+}
+
+[data-theme='light'] .chip:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.chip.active {
+  background: var(--accent-muted);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-7) var(--space-4);
+  border: 1px dashed var(--border-glass);
+}
+
+.empty-state h3 {
+  margin-bottom: var(--space-2);
+}
+
+.empty-state p {
+  color: var(--text-muted);
+}
+
+.mt-3 {
+  margin-top: var(--space-3);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.page-info {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
